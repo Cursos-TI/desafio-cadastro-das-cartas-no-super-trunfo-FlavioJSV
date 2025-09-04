@@ -82,7 +82,7 @@ int main()
         printf("Com tamanho de: %.2fkm²\n", km²2);
         printf("Seu PIB é de: %.2f\n", pib2);
         printf("Com %d pontos turísticos\n", turisticos2);
-        printf("Com uma densidade demografica de: %.2f hab/km²\n", populacao2 / km²2);//Desafio 2, Nível Aventureiro
+        printf("Com uma densidade demografica de: %.2f hab/km²\n", populacao2 / km²2);//Desafio 2, Nível Aventureiro.
         printf("Com uma renda per capta de: R$%.2f\n", pib2 / populacao2);//Desafio 2, Nível Aventureiro
     //terceira parte (carta 02), imprimindo na tela do usuário os valores inseridos.
 
