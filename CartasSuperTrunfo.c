@@ -1,20 +1,17 @@
-
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
-#include <stdio.h>
+#include<stdio.h>
 
 int main()
 {
     char estado[20], codigo[10], cidade[20];    
-    int populacao, turisticos;
-    float km², pib;    
-//primeira parte (carta 01), variáveis, informações necessárias para alimentar a carta. 
+    int turisticos;
+    float km², pib, populacao;
+//primeira parte (carta 01), variáveis, informações necessárias para alimentar as cartas. 
 
-    printf("Código da carta: ");    
+    printf("******JOGO SUPER TRUNFO******\n");
+    printf("\n");
+   
+    printf("DADOS PRIMEIRA CARTA\n");
+    printf("Código: ");
     scanf("%s", codigo);
 
     printf("Estado: ");
@@ -24,7 +21,7 @@ int main()
     scanf("%s", cidade);
 
     printf("População: ");
-    scanf("%d", &populacao);
+    scanf("%f", &populacao);
 
     printf("Qual o tamanho em km²?: ");
     scanf("%f", &km²);
@@ -36,24 +33,29 @@ int main()
     scanf("%d", &turisticos);
 //segunda parte (carta 01), tipos de dados, indicando cada variável e seus valores.
 
+    printf("Seu Estado é o: %s\n", estado);
     printf("Código da carta: %s\n", codigo);
-    printf("Estado: %s\n", estado);
-    printf("Cidade: %s\n", cidade);
-    printf("População: %d\n", populacao);
-    printf("Com tamanho em km² de: %.2f\n", km²);
-    printf("PIB: %.2f\n", pib);
+    printf("Sua cidade é: %s\n", cidade);
+    printf("População: %.2f\n", populacao);
+    printf("Com tamanho de: %.2fkm²\n", km²);
+    printf("Seu PIB é de: %.2f\n", pib);
     printf("Com %d pontos turísticos\n", turisticos);
+    printf("Com uma densidade demografica de: %.2f hab/km²\n", populacao / km²);//Desafio 2, Nível Intermediario
+    printf("Com uma renda per capta de: R$%.2f\n", pib / populacao);//Desafio 2, Nível Intermediario
 //terceira parte (carta 01), imprimindo na tela do usuário os valores inseridos.
 
 
         char estado2[20], codigo2[10], cidade2[20];    
-        int populacao2, turisticos2;
-        float km²2, pib2;
-    //primeira parte (carta 02), variáveis, informações necessárias para alimentar a carta. 
+        int turisticos2;
+        float km²2, pib2, populacao2;
+    //primeira parte (carta 02), variáveis, informações necessárias para alimentar as cartas. 
 
-        printf("Código da carta: ");
+        printf("\n");
+        printf("DADOS SEGUNDA CARTA\n");        
+        
+        printf("Código: ");
         scanf("%s", codigo2);
-
+    
         printf("Estado: ");
         scanf("%s", estado2);
 
@@ -61,7 +63,7 @@ int main()
         scanf("%s", cidade2);
 
         printf("População: ");
-        scanf("%d", &populacao2);
+        scanf("%f", &populacao2);
 
         printf("Qual o tamanho em km²?: ");
         scanf("%f", &km²2);
@@ -73,17 +75,19 @@ int main()
         scanf("%d", &turisticos2);
     //segunda parte (carta 02), tipos de dados, indicando cada variável e seus valores.
 
+        printf("Seu Estado é o: %s\n", estado2);
         printf("Código da carta: %s\n", codigo2);
-        printf("Estado: %s\n", estado2);
-        printf("Cidade: %s\n", cidade2);
-        printf("População: %d\n", populacao2);
-        printf("Com tamanho em km² de: %.2f\n", km²2);
-        printf("PIB: %.2f\n", pib2);
+        printf("Sua cidade é: %s\n", cidade2);
+        printf("População: %.2f\n", populacao2);
+        printf("Com tamanho de: %.2fkm²\n", km²2);
+        printf("Seu PIB é de: %.2f\n", pib2);
         printf("Com %d pontos turísticos\n", turisticos2);
+        printf("Com uma densidade demografica de: %.2f hab/km²\n", populacao2 / km²2);//Desafio 2, Nível Intermediario
+        printf("Com uma renda per capta de: R$%.2f\n", pib2 / populacao2);//Desafio 2, Nível Intermediario
     //terceira parte (carta 02), imprimindo na tela do usuário os valores inseridos.
+
 
 
 return 0;
 
 }
-
