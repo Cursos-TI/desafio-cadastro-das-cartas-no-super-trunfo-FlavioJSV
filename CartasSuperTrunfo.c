@@ -121,7 +121,7 @@ int main()
         comparacaoArea = km² > km²2;
         comparacaoPIB = pib > pib2;
         comparacaoTuristico = turisticos > turisticos2;
-        comparacaoDensidade = desnsidadeDemografica < desnsidadeDemografica2;
+        comparacaoDensidade = desnsidadeDemografica > desnsidadeDemografica2;
         comparacaoCapita = rendaPerCapita > rendaPerCapita2;
         resultado = superPoder > superPoder2;
 
